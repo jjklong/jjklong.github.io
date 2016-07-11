@@ -4,29 +4,22 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-    <title>jjklong</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Jordan Long</title>
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a href="http://jjklong.github.io" rel"">
-          <img src="https://raw.githubusercontent.com/jjklong/jjklong.github.io/master/assets/png/yellow_chiffon_jlong.png"/>
-        </a>
-      </div>
-    </header>
-    <main>
-      <div class="links">
-        <ul>
-          <li class="one"><a href="#">API GitHub Search</a></li>
-          <li class="two"><a href="http://jjklong.github.io/lnkrrgh">lnkrr</a></li>
-          <li class="one"><a href="#">Blog</a></li>
-          <li class="two"><a href="#">Memory Game</a></li>
-          <li class="one"><a href="#">Kato</a></li>
-        </ul>
-      </div>
 
-    </main>
+    <div ng-app="app">
+        <ng-view> </ng-view>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-resource.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/controller.js"></script>
+
   </body>
 </html>

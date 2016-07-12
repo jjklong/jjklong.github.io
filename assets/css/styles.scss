@@ -14,6 +14,10 @@ body{
   font-family: $f-f;
   font-weight: 700;
   header{
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    width: 100%;
     color: $blue;
     display: block;
     text-align: right;
@@ -31,15 +35,21 @@ body{
       top: .5em;
       left: 0;
       z-index: -1;
+      opacity: .7;
     }
   }
   main{
     text-align: center;
-    margin-top: 1em;
+    margin-top: 19em;
 
     .navBar{
       text-align: right;
-
+      padding-bottom: 10em;
+      background: white;
+      width: 55%;
+      right: 0;
+      position: absolute;
+      border-radius: 15% 0% 20% 20%;
       ul{
         display: inline-block;
         margin: 0em 2em;
@@ -52,7 +62,7 @@ body{
             text-decoration: none;
             font-weight: 300;
             font-size: 2em;
-            color: $blue;
+            color: #525252;
             &:visited{
               text-decoration: none;
               outline: none;
@@ -64,19 +74,24 @@ body{
 
     .portfolio{
       text-align: left;
-      position: absolute;
-
+      width: 100%;
+      position: fixed;
+      font-weight: 100;
       font-size: 3em;
       margin-left: .5em;
-      top: 8em;
-      color: $blue;
+      top: 10em;
+      color: #525252;
     }
 
     .projects{
+      background: white;
+      top: 70%;
+      color: #525252;
       position: absolute;
-      right: .5em;
+      right: 0;
       width: 50%;
       .project{
+        color: #525252;
         font-weight: 300;
         width: 90%;
         height: 5em;
@@ -86,8 +101,11 @@ body{
       }
     }
     .infos{
+      background: white;
+      top: 70%;
+      color: #525252;
       position: absolute;
-      left: .5em;
+      left: 0;
       width: 50%;
       .info{
         font-weight: 300;
@@ -114,5 +132,59 @@ body{
         font-style: italic;
       }
     }
+  }
+  .aboutWrap{
+    width: 100%;
+    display: block;
+    margin: 3% auto;
+    .aboutMe{
+      padding: 1em;
+
+    #subName{
+      z-index: -1;
+      position: fixed;
+      display: inline-block;
+      font-size: 2em;
+      border-bottom: 1px solid black;
+      padding: 4em;
+      margin: .5em;
+      text-align: right;
+      li{
+        display: inline-block;
+      }
+    }
+    h6{
+      position: fixed;
+      top: 7em;
+      font-size: 4em;
+      margin: 0.3em;
+      z-index: -1;
+    }
+    p{
+      padding: 0.5em;
+      background: white;
+      margin-top: 30em;
+      font-size: 1.6em;
+      font-weight: 100;
+    }
+    a{
+      position: absolute;
+      right: 2%;
+      bottom: 2%;
+      background: white;
+      border: 3px solid #f3f3f3;
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 2em;
+      color: #e0e0e0;
+      padding: .5em 1em;
+      border-radius: 5px;
+      &:hover{
+        background: white;
+        border: 3px solid #525252;
+        color: #949494;
+      }
+    }
+  }
   }
 }

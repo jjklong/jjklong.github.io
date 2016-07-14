@@ -1,190 +1,263 @@
 $blue: #708090;
 $yellow: #fffacd;
 $f-f: 'Raleway', sans-serif;
-$right: 100px 0px 100px 0px;
-$left: 0px 100px 0px 100px;
-
-* html{
-  font: 100%;
-  box-sizing: border-box;
+$right: 100px 0 100px 0;
+$left: 0 100px 0 100px;
+* html {
+    font: 100%;
+    box-sizing: border-box;
 }
-
-body{
-  background-color: white;
-  font-family: $f-f;
-  font-weight: 700;
-  header{
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    color: $blue;
-    display: block;
-    text-align: right;
-    #name{
-      padding: .25em;
-      font-weight: 300;
-      font-size: 4em;
-      li{
-
-      }
-    }
-    img{
-      width: 45%;
-      position: absolute;
-      top: .5em;
-      left: 0;
-      z-index: -1;
-      opacity: .7;
-    }
-  }
-  main{
-    text-align: center;
-    margin-top: 19em;
-
-    .navBar{
-      text-align: right;
-      padding-bottom: 10em;
-      background: white;
-      width: 55%;
-      right: 0;
-      position: absolute;
-      border-radius: 15% 0% 20% 20%;
-      ul{
-        display: inline-block;
-        margin: 0em 2em;
-        li{
-          margin: 1em 0;
-          margin: 1em 0;
-          border-bottom: 1px solid rgba(44, 50, 56, .5);
-          padding-bottom: .5em;
-          a{
-            text-decoration: none;
+body {
+    background-color: white;
+    font-family: $f-f;
+    font-weight: 700;
+    header {
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        color: $blue;
+        display: block;
+        text-align: right;
+        #name {
+            padding: 0.25em;
             font-weight: 300;
-            font-size: 2em;
+            font-size: 4em;
+            li {}
+        }
+        img {
+            width: 45%;
+            position: absolute;
+            top: 0.5em;
+            left: 0;
+            z-index: -1;
+            opacity: 0.7;
+        }
+    }
+    main {
+        text-align: center;
+        margin-top: 19em;
+        .navBar {
+            text-align: right;
+            padding-bottom: 10em;
+            background: white;
+            width: 55%;
+            right: 0;
+            position: absolute;
+            border-radius: 15% 0 20% 20%;
+            ul {
+                display: inline-block;
+                margin: 0 2em;
+                li {
+                    margin: 1em 0;
+                    border-bottom: 1px solid rgba(44, 50, 56, .5);
+                    padding-bottom: 0.5em;
+                    a {
+                        text-decoration: none;
+                        font-weight: 300;
+                        font-size: 2em;
+                        color: #525252;
+                        &:visited {
+                            text-decoration: none;
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+        .portfolio {
+            text-align: right;
+            width: 100%;
+            position: fixed;
+            font-weight: 100;
+            font-size: 3em;
+            right: 1em;
+            top: 10em;
             color: #525252;
-            &:visited{
-              text-decoration: none;
-              outline: none;
+        }
+        .projects {
+            background: white;
+            top: 70%;
+            color: #525252;
+            position: absolute;
+            right: 0;
+            width: 50%;
+            .project {
+                color: #525252;
+                font-weight: 300;
+                width: 90%;
+                margin: 3em auto;
+                font-size: 2em;
+                border: 1px solid $blue;
+                img{
+                  width: 50%;
+                  border-radius: 10px;
+                }
+            }
+        }
+        .infos {
+            background: white;
+            top: 70%;
+            color: #525252;
+            position: absolute;
+            left: 0;
+            width: 50%;
+            .info {
+                font-weight: 300;
+                width: 90%;
+                margin: 3em auto;
+                font-size: 2em;
+            }
+        }
+        .resume {
+            text-align: left;
+            h2 {
+                font-size: 3em;
+            }
+            h3 {
+                font-size: 2em;
+            }
+            h4 {
+                font-size: 1.5em;
+            }
+            h5 {
+                font-size: 1.25em;
+                font-style: italic;
+            }
+        }
+    }
+    .aboutWrap {
+        width: 100%;
+        display: block;
+        margin: 3% auto;
+        .aboutMe {
+            padding: 1em;
+            #subName {
+                z-index: -1;
+                position: fixed;
+                display: inline-block;
+                font-size: 2em;
+                border-bottom: 1px solid black;
+                padding: 4em;
+                margin: 0.5em;
+                text-align: right;
+                li {
+                    display: inline-block;
+                }
+            }
+            h6 {
+                position: fixed;
+                top: 7em;
+                font-size: 4em;
+                margin: 0.3em;
+                z-index: -1;
+            }
+            p {
+                padding: 0.5em;
+                background: white;
+                margin-top: 30em;
+                font-size: 1.6em;
+                font-weight: 100;
+            }
+            a {
+                position: absolute;
+                right: 2%;
+                bottom: 2%;
+                background: white;
+                border: 3px solid #f3f3f3;
+                text-decoration: none;
+                font-weight: 300;
+                font-size: 2em;
+                color: #e0e0e0;
+                padding: 0.5em 1em;
+                border-radius: 5px;
+                &:hover {
+                    background: white;
+                    border: 3px solid #525252;
+                    color: #949494;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1024px) {
+    body {
+        background-color: white;
+        font-family: $f-f;
+        font-weight: 700;
+        header {
+            z-index: -1;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            color: $blue;
+            display: block;
+            text-align: right;
+            .logo{
+              margin-right: 25%;
+
+            #name {
+                margin-top: 5%;
+                padding: 0.25em;
+                font-weight: 300;
+                font-size: 10em;
+                #james{
+                  font-size: .9em;
+                }
+                #kvale{
+                  font-size: .8em;
+                }
+                #long{
+                  font-size: .7em;
+                }
+            }
+            }
+        }
+        main{
+          .navBar{
+            position: absolute;
+            top: 2%;
+            right: 1%;
+            background: none;
+            ul{
+              li{
+                display: block;
+                margin: .5em;
+                border: none;
+              }
             }
           }
+          .portfolio{
+            position: absolute;
+            right: 5%;
+            top: 85%;
+            text-align: right;
+            font-size: 3em;
+            display: block;
+            i{
+              font-size: .6em;
+              display: block;
+              margin-top: .5%;
+              margin-right: 5.5%;
+            }
+          }
+          .projects{
+            top: 100%;
+            padding: 6em 0;
+            .project{
+              height: auto;
+              border: none;
+
+              img{
+                width: 50%;
+                border-radius: 10px;
+              }
+            }
+          }
+          .infos{
+            top: 100%;
+            padding: 6em 0;
+          }
         }
-      }
     }
-
-    .portfolio{
-      text-align: left;
-      width: 100%;
-      position: fixed;
-      font-weight: 100;
-      font-size: 3em;
-      margin-left: .5em;
-      top: 10em;
-      color: #525252;
-    }
-
-    .projects{
-      background: white;
-      top: 70%;
-      color: #525252;
-      position: absolute;
-      right: 0;
-      width: 50%;
-      .project{
-        color: #525252;
-        font-weight: 300;
-        width: 90%;
-        height: 5em;
-        margin: .5em auto;
-        font-size: 2em;
-        border: 1px solid $blue;
-      }
-    }
-    .infos{
-      background: white;
-      top: 70%;
-      color: #525252;
-      position: absolute;
-      left: 0;
-      width: 50%;
-      .info{
-        font-weight: 300;
-        width: 90%;
-        height: 5em;
-        margin: .5em auto;
-        font-size: 2em;
-        border: 1px solid $blue;
-      }
-    }
-    .resume{
-      text-align: left;
-      h2{
-        font-size: 3em;
-      }
-      h3{
-        font-size: 2em;
-      }
-      h4{
-        font-size: 1.5em;
-      }
-      h5{
-        font-size: 1.25em;
-        font-style: italic;
-      }
-    }
-  }
-  .aboutWrap{
-    width: 100%;
-    display: block;
-    margin: 3% auto;
-    .aboutMe{
-      padding: 1em;
-
-    #subName{
-      z-index: -1;
-      position: fixed;
-      display: inline-block;
-      font-size: 2em;
-      border-bottom: 1px solid black;
-      padding: 4em;
-      margin: .5em;
-      text-align: right;
-      li{
-        display: inline-block;
-      }
-    }
-    h6{
-      position: fixed;
-      top: 7em;
-      font-size: 4em;
-      margin: 0.3em;
-      z-index: -1;
-    }
-    p{
-      padding: 0.5em;
-      background: white;
-      margin-top: 30em;
-      font-size: 1.6em;
-      font-weight: 100;
-    }
-    a{
-      position: absolute;
-      right: 2%;
-      bottom: 2%;
-      background: white;
-      border: 3px solid #f3f3f3;
-      text-decoration: none;
-      font-weight: 300;
-      font-size: 2em;
-      color: #e0e0e0;
-      padding: .5em 1em;
-      border-radius: 5px;
-      &:hover{
-        background: white;
-        border: 3px solid #525252;
-        color: #949494;
-      }
-    }
-  }
-  }
 }

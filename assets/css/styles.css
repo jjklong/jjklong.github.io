@@ -74,10 +74,15 @@ main {
       border-radius: 50%; }
     main .portfolio .project {
       margin: 10% 3%; }
+      main .portfolio .project a:link, main .portfolio .project a:visited {
+        border: none;
+        text-decoration: none;
+        font-style: normal; }
       main .portfolio .project p {
         font-family: "Arvo", serif;
         font-size: .6em;
-        line-height: 1.5; }
+        line-height: 1.5;
+        color: black; }
       main .portfolio .project #pearlimg {
         width: 100px;
         height: 100px; }

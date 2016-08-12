@@ -34,10 +34,16 @@ main{
     }
     .project{
       margin: 10% 3%;
+      a:link, a:visited {
+       border:none;
+       text-decoration:none;
+       font-style:normal;
+      }
       p{
         font-family: $f-a;
         font-size: .6em;
         line-height: 1.5;
+        color: black;
       }
       #pearlimg{
         width: 100px;

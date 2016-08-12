@@ -2,208 +2,185 @@
   font: 100%;
   box-sizing: border-box; }
 
-body {
-  background-color: white;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700; }
-  body header {
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    color: #708090;
-    display: block;
-    text-align: right; }
-    body header #name {
-      padding: 0.25em;
-      font-weight: 300;
-      font-size: 4em; }
-    body header img {
-      width: 45%;
-      position: absolute;
-      top: 0.5em;
-      left: 0;
-      z-index: -1;
-      opacity: 0.7; }
-  body main {
-    text-align: center;
-    margin-top: 19em; }
-    body main .navBar {
-      text-align: right;
-      padding-bottom: 10em;
-      background: white;
-      width: 55%;
-      right: 0;
-      position: absolute;
-      border-radius: 15% 0 20% 20%; }
-      body main .navBar ul {
-        display: inline-block;
-        margin: 0 2em; }
-        body main .navBar ul li {
-          margin: 1em 0;
-          border-bottom: 1px solid rgba(44, 50, 56, 0.5);
-          padding-bottom: 0.5em; }
-          body main .navBar ul li a {
-            text-decoration: none;
-            font-weight: 300;
-            font-size: 2em;
-            color: #525252; }
-            body main .navBar ul li a:visited {
-              text-decoration: none;
-              outline: none; }
-    body main .portfolio {
-      text-align: right;
-      width: 100%;
-      position: fixed;
-      font-weight: 100;
-      font-size: 3em;
-      right: 1em;
-      top: 10em;
-      color: #525252; }
-    body main .projects {
-      background: white;
-      top: 70%;
-      color: #525252;
-      position: absolute;
-      right: 0;
-      width: 50%; }
-      body main .projects .project {
-        color: #525252;
-        font-weight: 300;
-        width: 90%;
-        margin: 3em auto;
-        font-size: 2em;
-        border: 1px solid #708090; }
-        body main .projects .project img {
-          width: 50%;
-          border-radius: 10px; }
-    body main .infos {
-      background: white;
-      top: 70%;
-      color: #525252;
-      position: absolute;
-      left: 0;
-      width: 50%; }
-      body main .infos .info {
-        font-weight: 300;
-        width: 90%;
-        margin: 3em auto;
-        font-size: 2em; }
-    body main .resume {
-      text-align: left; }
-      body main .resume h2 {
-        font-size: 3em; }
-      body main .resume h3 {
-        font-size: 2em; }
-      body main .resume h4 {
-        font-size: 1.5em; }
-      body main .resume h5 {
-        font-size: 1.25em;
-        font-style: italic; }
-  body .aboutWrap {
-    width: 100%;
-    display: block;
-    margin: 3% auto; }
-    body .aboutWrap .aboutMe {
-      padding: 1em; }
-      body .aboutWrap .aboutMe #subName {
-        z-index: -1;
-        position: fixed;
-        display: inline-block;
-        font-size: 2em;
-        border-bottom: 1px solid black;
-        padding: 4em;
-        margin: 0.5em;
-        text-align: right; }
-        body .aboutWrap .aboutMe #subName li {
-          display: inline-block; }
-      body .aboutWrap .aboutMe h6 {
-        position: fixed;
-        top: 7em;
-        font-size: 4em;
-        margin: 0.3em;
-        z-index: -1; }
-      body .aboutWrap .aboutMe p {
-        padding: 0.5em;
-        background: white;
-        margin-top: 30em;
-        font-size: 1.6em;
-        font-weight: 100; }
-      body .aboutWrap .aboutMe a {
-        position: absolute;
-        right: 2%;
-        bottom: 2%;
-        background: white;
-        border: 3px solid #f3f3f3;
-        text-decoration: none;
-        font-weight: 300;
-        font-size: 2em;
-        color: #e0e0e0;
-        padding: 0.5em 1em;
-        border-radius: 5px; }
-        body .aboutWrap .aboutMe a:hover {
-          background: white;
-          border: 3px solid #525252;
-          color: #949494; }
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }
 
-@media (min-width: 1024px) {
-  body {
-    background-color: white;
-    font-family: "Raleway", sans-serif;
-    font-weight: 700; }
-    body header {
-      z-index: -1;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      color: #708090;
-      display: block;
+nav .nav_container {
+  font-family: "Raleway", sans-serif; }
+  nav .nav_container a:link, nav .nav_container a:visited {
+    border: none;
+    text-decoration: none;
+    font-style: normal;
+    color: black; }
+  nav .nav_container .nav_header {
+    font-size: 3em;
+    padding: 5%; }
+    nav .nav_container .nav_header a {
+      padding: 5%;
+      border-bottom: 1px solid black; }
+    nav .nav_container .nav_header #nav_menu {
+      position: absolute;
+      right: 3%;
+      top: 3%; }
+  nav .nav_container .navBar {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    font-size: 2.5em;
+    line-height: 3; }
+    nav .nav_container .navBar .nav_links {
       text-align: right; }
-      body header .logo {
-        margin-right: 25%; }
-        body header .logo #name {
-          margin-top: 5%;
-          padding: 0.25em;
-          font-weight: 300;
-          font-size: 10em; }
-          body header .logo #name #james {
-            font-size: .9em; }
-          body header .logo #name #kvale {
-            font-size: .8em; }
-          body header .logo #name #long {
-            font-size: .7em; }
-    body main .navBar {
-      position: absolute;
-      top: 2%;
-      right: 1%;
-      background: none; }
-      body main .navBar ul li {
-        display: block;
-        margin: .5em;
-        border: none; }
-    body main .portfolio {
-      position: absolute;
-      right: 5%;
-      top: 85%;
-      text-align: right;
-      font-size: 3em;
-      display: block; }
-      body main .portfolio i {
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%; }
+  footer p {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    font-family: "Raleway", sans-serif;
+    padding: 2% 0; }
+
+main {
+  font-family: "Raleway", sans-serif; }
+  main .homepage {
+    margin: 5% 0; }
+    main .homepage .aboutme {
+      padding: 1% 5% 1%;
+      width: 70%;
+      font-size: 1.2em;
+      line-height: 1.1; }
+  main .portfolio {
+    font-size: 2.5em;
+    margin: 5%; }
+    main .portfolio #portfolioH1 {
+      margin-left: 50%;
+      color: grey;
+      border-bottom: 1px dotted grey;
+      display: inline;
+      padding: 2%;
+      font-size: 1.2em; }
+    main .portfolio .fa-angle-down {
+      display: inline-block;
+      margin: 0 5%;
+      animation: arrowPortfolio 2s infinite;
+      -webkit-animation: arrowPortfolio 2s infinite;
+      -moz-animation: arrowPortfolio 2s infinite;
+      -o-animation: arrowPortfolio 2s infinite;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+    main .portfolio .project {
+      margin: 10% 3%; }
+      main .portfolio .project p {
+        font-family: "Arvo", serif;
         font-size: .6em;
-        display: block;
-        margin-top: .5%;
-        margin-right: 5.5%; }
-    body main .projects {
-      top: 100%;
-      padding: 6em 0; }
-      body main .projects .project {
-        height: auto;
-        border: none; }
-        body main .projects .project img {
-          width: 50%;
-          border-radius: 10px; }
-    body main .infos {
-      top: 100%;
-      padding: 6em 0; } }
+        line-height: 1.5; }
+      main .portfolio .project #pearlimg {
+        width: 100px;
+        height: 100px; }
+      main .portfolio .project #pearl {
+        font-family: "Arvo", serif;
+        font-size: 1.5em;
+        color: #E67A7A;
+        margin: 5% 0; }
+      main .portfolio .project img {
+        width: 25%;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 5%;
+        vertical-align: text-bottom; }
+      main .portfolio .project #chess {
+        font-family: "Arvo", serif;
+        font-size: 1.5em;
+        color: #F19F4D;
+        margin: 5% 0; }
+      main .portfolio .project #chessimg {
+        width: 80px;
+        height: 80px;
+        padding: 2%; }
+      main .portfolio .project .fa-weixin {
+        color: #233237; }
+      main .portfolio .project #brotogo {
+        font-family: "Arvo", serif;
+        font-size: 1.5em;
+        color: #4484CE;
+        margin: 5% 0; }
+
+@keyframes arrowPortfolio {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-2px); }
+  60% {
+    transform: translateY(-4px); } }
+.resume {
+  display: block;
+  margin: 10%;
+  font-weight: 100; }
+  .resume #subName {
+    display: inline-block;
+    width: 50%;
+    position: absolute;
+    right: 5%;
+    top: 5%; }
+    .resume #subName li {
+      font-size: 2em;
+      display: inline-block;
+      list-style: none; }
+  .resume #homeBtn {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    background: white;
+    border: 3px solid #f3f3f3;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 2em;
+    color: #e0e0e0;
+    padding: 0.5em 1em;
+    border-radius: 5px; }
+    .resume #homeBtn:hover {
+      background: white;
+      border: 3px solid #525252;
+      color: #949494; }
+  .resume .education {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    width: 25%;
+    text-align: right; }
+  .resume .workExperience {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 60%; }
+  .resume h2 {
+    font-size: 3em;
+    margin: 4% 1%; }
+  .resume h3 {
+    font-size: 2em;
+    margin: 3% 1%; }
+  .resume h4 {
+    font-size: 1.5em;
+    margin: 2% 1%; }
+  .resume h5 {
+    margin: 1%;
+    font-size: 1em;
+    font-style: italic; }
+  .resume h6 {
+    margin: 1%;
+    font-size: 1em; }
+  .resume .resumeBullets {
+    margin: 1%; }
+    .resume .resumeBullets li {
+      margin: 1% 3%;
+      list-style: circle; }
+  .resume .footer {
+    height: 5em;
+    width: 100%;
+    display: block; }
 
 /*# sourceMappingURL=styles.css.map */

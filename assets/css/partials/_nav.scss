@@ -1,0 +1,35 @@
+nav{
+  .nav_container{
+    font-family: $f-f;
+    a:link, a:visited {
+     border:none;
+     text-decoration:none;
+     font-style:normal;
+     color:black;
+    }
+    .nav_header{
+      font-size: 3em;
+      padding: 5%;
+      a{
+        padding: 5%;
+        border-bottom: 1px solid black;
+      }
+      #nav_menu{
+        position: absolute;
+        right: 3%;
+        top: 3%;
+      }
+    }
+    .navBar{
+      position: absolute;
+      top: 10%;
+      right: 3%;
+      font-size: 2.5em;
+      line-height: 3;
+
+      .nav_links{
+        text-align: right;
+      }
+    }
+  }
+}

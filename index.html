@@ -1,18 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="assets/png/dev_ico_jlong.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Raleway" rel="stylesheet">
     <title>Jordan Long</title>
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
-  <body>
+  <body ng-cloak>
 
-    <div ng-app="app">
-        <ng-view> </ng-view>
-    </div>
+    <nav ng-controller="navController as navCtrl">
+      <div class="nav_container" >
+
+        <div class="nav_header">
+          <a href="/#/">Jordan Long</a>
+          <i ng-click="navCtrl.navBar = !navCtrl.navBar" id="nav_menu" class="fa fa-bars fa-1x"></i>
+        </div>
+        <div ng-show="navCtrl.navBar" class="navBar">
+
+            <ul>
+              <li class="nav_links"><a href="mailto:jordan.long222@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+              <li class="nav_links"><a href="https://github.com/jjklong"><i class="fa fa-github"></i></a></li>
+              <li class="nav_links"><a href="https://www.linkedin.com/in/jjklong"><i class="fa fa-linkedin"></i></a></li>
+              <li class="nav_links"><a href="https://twitter.com/jordjklong"><i class="fa fa-twitter"></i></a></li>
+              <li class="nav_links"><a href="assets/pdf/resume_jordan_long.pdf" target="_blank"><i class="fa fa-file-text-o" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div ng-view></div>
+
+    <footer>
+      <p>
+        &copy; Jordan Long 2016
+      </p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>

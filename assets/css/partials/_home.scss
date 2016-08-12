@@ -1,0 +1,89 @@
+main{
+  font-family: $f-f;
+  .homepage{
+    margin: 5% 0;
+    .aboutme{
+      padding: 1% 5% 1%;
+      width: 70%;
+      font-size: 1.2em;
+      line-height: 1.1;
+    }
+  }
+  .portfolio{
+    font-size: 2.5em;
+    margin: 5%;
+    #portfolioH1{
+      margin-left: 50%;
+      color: grey;
+      border-bottom: 1px dotted grey;
+      display: inline;
+      padding: 2%;
+      font-size: 1.2em;
+    }
+    .fa-angle-down{
+      display: inline-block;
+      margin: 0 5%;
+      animation: arrowPortfolio 2s infinite;
+      -webkit-animation: arrowPortfolio 2s infinite;
+      -moz-animation: arrowPortfolio 2s infinite;
+      -o-animation: arrowPortfolio 2s infinite;
+      -webkit-border-radius:50%;
+      -moz-border-radius:50%;
+      -ms-border-radius:50%;
+      border-radius:50%;
+    }
+    .project{
+      margin: 10% 3%;
+      p{
+        font-family: $f-a;
+        font-size: .6em;
+        line-height: 1.5;
+      }
+      #pearlimg{
+        width: 100px;
+        height: 100px;
+      }
+      #pearl{
+        font-family: $f-a;
+        font-size: 1.5em;
+        color: $red;
+        margin: 5% 0;
+      }
+      img{
+        width: 25%;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 5%;
+        vertical-align: text-bottom;;
+      }
+      #chess{
+        font-family: $f-a;
+        font-size: 1.5em;
+        color: $b4;
+        margin: 5% 0;
+      }
+      #chessimg{
+        width: 80px;
+        height: 80px;
+        padding: 2%;
+      }
+
+      .fa-weixin{
+        color: $c2;
+      }
+      #brotogo{
+        font-family: $f-a;
+        font-size: 1.5em;
+        color: $b1;
+        margin: 5% 0;
+      }
+    }
+  }
+}
+
+
+@keyframes arrowPortfolio {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-2px);}
+ 60% {transform: translateY(-4px);}
+}

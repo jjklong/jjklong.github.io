@@ -12,6 +12,11 @@ main{
   .portfolio{
     font-size: 2.5em;
     margin: 5%;
+    a:link, a:visited {
+     border:none;
+     text-decoration:none;
+     font-style:normal;
+    }
     #portfolioH1{
       margin-left: 50%;
       color: grey;
@@ -32,12 +37,12 @@ main{
       -ms-border-radius:50%;
       border-radius:50%;
     }
+
     .project{
-      margin: 10% 3%;
-      a:link, a:visited {
-       border:none;
-       text-decoration:none;
-       font-style:normal;
+      margin: 15% 3%;
+      .fa-github{
+        color: black;
+        float: right;
       }
       p{
         font-family: $f-a;
@@ -83,6 +88,28 @@ main{
         color: $b1;
         margin: 5% 0;
       }
+    }
+  }
+  .additional_contact{
+    text-align: right;
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 3%;
+    margin-left: 50%;
+    h1{
+      border-bottom: 1px dotted black;
+      font-size: 1.2em;
+      font-weight: 700;
+      padding: 1% 1% 2%;
+      margin-bottom: 2%;
+      text-align: right;
+    }
+    p{
+      line-height: 1.2;
+      font-size: .8em;
+      padding-right: 2%;
+      text-align: right;
+
     }
   }
 }

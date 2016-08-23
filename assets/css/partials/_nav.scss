@@ -15,13 +15,13 @@ nav{
         border-bottom: 1px solid black;
       }
       #nav_menu{
-        position: absolute;
+        position: fixed;
         right: 3%;
         top: 3%;
       }
     }
     .navBar{
-      position: absolute;
+      position: fixed;
       top: 10%;
       right: 3%;
       font-size: 2.5em;

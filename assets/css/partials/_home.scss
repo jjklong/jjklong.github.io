@@ -11,14 +11,16 @@ main{
   }
   .portfolio{
     font-size: 2.5em;
-    margin: 5%;
+    margin: 5% 40% 0 5%;
     a:link, a:visited {
      border:none;
      text-decoration:none;
      font-style:normal;
     }
     #portfolioH1{
-      margin-left: 50%;
+      position: absolute;
+      right: 25%;
+      width: 25%;
       color: grey;
       border-bottom: 1px dotted grey;
       display: inline;
@@ -95,7 +97,8 @@ main{
     display: block;
     font-size: 1.5em;
     margin-bottom: 3%;
-    margin-left: 50%;
+    margin-left: 65%;
+    margin-right: 10%;
     h1{
       border-bottom: 1px dotted black;
       font-size: 1.2em;

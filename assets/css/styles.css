@@ -19,11 +19,11 @@ nav .nav_container {
       padding: 5%;
       border-bottom: 1px solid black; }
     nav .nav_container .nav_header #nav_menu {
-      position: absolute;
+      position: fixed;
       right: 3%;
       top: 3%; }
   nav .nav_container .navBar {
-    position: absolute;
+    position: fixed;
     top: 10%;
     right: 3%;
     font-size: 2.5em;
@@ -53,13 +53,15 @@ main {
       line-height: 1.1; }
   main .portfolio {
     font-size: 2.5em;
-    margin: 5%; }
+    margin: 5% 40% 0 5%; }
     main .portfolio a:link, main .portfolio a:visited {
       border: none;
       text-decoration: none;
       font-style: normal; }
     main .portfolio #portfolioH1 {
-      margin-left: 50%;
+      position: absolute;
+      right: 25%;
+      width: 25%;
       color: grey;
       border-bottom: 1px dotted grey;
       display: inline;
@@ -121,7 +123,8 @@ main {
     display: block;
     font-size: 1.5em;
     margin-bottom: 3%;
-    margin-left: 50%; }
+    margin-left: 65%;
+    margin-right: 10%; }
     main .additional_contact h1 {
       border-bottom: 1px dotted black;
       font-size: 1.2em;

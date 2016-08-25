@@ -1,34 +1,122 @@
-nav{
-  .nav_container{
-    font-family: $f-f;
-    a:link, a:visited {
-     border:none;
-     text-decoration:none;
-     font-style:normal;
-     color:black;
-    }
-    .nav_header{
-      font-size: 3em;
-      padding: 5%;
-      a{
-        padding: 5%;
-        border-bottom: 1px solid black;
+////////////  DESKTOP VIEW  ////////////
+@media only screen
+  and (min-width: 1020px) {
+    nav{
+      .nav_container{
+        font-family: $f-f;
+        a:link, a:visited {
+         border:none;
+         text-decoration:none;
+         font-style:normal;
+         color:black;
+        }
+        .nav_header{
+          font-size: 3em;
+          padding: 5%;
+          a{
+            padding: 5%;
+            border-bottom: 1px solid black;
+          }
+          #nav_menu{
+            display: none;
+          }
+        }
+        .navBar{
+          display: none;
+        }
+        .desktop_navbar{
+          position: fixed;
+          top: 10%;
+          right: 3%;
+          font-size: 2.5em;
+          line-height: 3;
+          .nav_links{
+            text-align: right;
+          }
+        }
       }
-      #nav_menu{
-        position: fixed;
-        right: 3%;
-        top: 3%;
-      }
     }
-    .navBar{
-      position: fixed;
-      top: 10%;
-      right: 3%;
-      font-size: 2.5em;
-      line-height: 3;
+  }
+////////////  TABLET VIEW  ////////////
+@media only screen
+  and (min-width: 480px)
+  and (max-width: 1020px){
+    nav{
+      .nav_container{
+        font-family: $f-f;
+        a:link, a:visited {
+         border:none;
+         text-decoration:none;
+         font-style:normal;
+         color:black;
+        }
+        .nav_header{
+          font-size: 3em;
+          padding: 5%;
+          a{
+            padding: 5%;
+            border-bottom: 1px solid black;
+          }
+          #nav_menu{
+            position: fixed;
+            right: 3%;
+            top: 3%;
+          }
+        }
+        .navBar{
+          position: fixed;
+          top: 10%;
+          right: 3%;
+          font-size: 2.5em;
+          line-height: 3;
 
-      .nav_links{
-        text-align: right;
+          .nav_links{
+            text-align: right;
+          }
+        }
+        .desktop_navbar{
+          display: none;
+        }
+      }
+    }
+  }
+////////////  MOBILE VIEW  ////////////
+@media only screen and (max-width: 480px) {
+  nav{
+    .nav_container{
+      font-family: $f-f;
+      a:link, a:visited {
+       border:none;
+       text-decoration:none;
+       font-style:normal;
+       color:black;
+      }
+      .nav_header{
+        font-size: 3em;
+        padding: 5%;
+        a{
+          padding: 5%;
+          border-bottom: 1px solid black;
+        }
+        #nav_menu{
+          position: fixed;
+          right: 3%;
+          top: 3%;
+        }
+      }
+      .navBar{
+        position: fixed;
+        top: 10%;
+        right: 3%;
+        font-size: 2.5em;
+        line-height: 3;
+
+        .nav_links{
+          text-align: right;
+        }
+      }
+      .desktop_navbar{
+        display: none;
       }
     }
   }

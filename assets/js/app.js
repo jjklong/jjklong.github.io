@@ -7,7 +7,7 @@ app.run(['$anchorScroll', function($anchorScroll){
 app.config(function($routeProvider){
   $routeProvider
   .when('/', {
-    templateUrl: 'pages/home.html'
+    templateUrl: 'pages/landing.html'
   })
   .when('/about', {
     templateUrl: 'pages/about.html'

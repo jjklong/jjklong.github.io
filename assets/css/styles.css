@@ -5,7 +5,8 @@
 body {
   background-image: url("https://raw.githubusercontent.com/jjklong/jjklong.github.io/master/assets/png/jlong_background2.png");
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-size: 100%; }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important; }
